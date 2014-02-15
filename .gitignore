@@ -1,0 +1,5 @@
+[Tt]humbs.db
+*.DS_Store
+
+#Project files
+[Bb]uild/
