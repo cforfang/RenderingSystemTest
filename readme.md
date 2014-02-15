@@ -5,6 +5,7 @@ Basic rendering-system created as an exercise with the following aims:
 - Keeping things relatively simple; the aim is not to create a complete graphics engine.
 
 The rendering-system is inspired by [BGFX](https://github.com/bkaradzic/bgfx), and works in the same general way:
+
 1. The system creates and returns handles to resources.
 2. Graphics-commands (uploads, updates, binds, state-changes, draw-commands, etc.) are logged and once a complete frame is generated, given to the rendering-thread for execution.
 3. The rendering-thread owns the OpenGL-context, shadows it's state (to avoid redundant state-changes), and executes all commands to draw a frame once they are received.
@@ -14,6 +15,7 @@ The rendering-system is inspired by [BGFX](https://github.com/bkaradzic/bgfx), a
 To compile, you'll need a C++11-supporting compiler, CMake, [GLFW](http://www.glfw.org/) (included as Git submodule), [GLM](http://glm.g-truc.net/0.9.5/index.html) (ditto), [GLEW](http://glew.sourceforge.net/) (included in repository), and [LuaJIT](http://luajit.org/) (libs for Visual C++ 2013 included).
 
 Steps for Visual C++ 2013 (after git clone)
+
 1. git submodule init
 2. git submodule update
 3. Run CMake
