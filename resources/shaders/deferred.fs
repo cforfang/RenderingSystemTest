@@ -86,6 +86,7 @@ void main()
 	else if (materialHasHeightMap && normalMappingEnabled)
 	{
 		// Calculate new normal from height map using a Sobel filter
+		// Adapted to GLSL from http://content.gpwiki.org/D3DBook:(Lighting)_Per-Pixel_Lighting
 
 		vec2 vPixelSize = vec2(1, 1)/textureSize(uSamplerHeight, 0);
 

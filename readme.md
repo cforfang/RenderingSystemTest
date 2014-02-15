@@ -28,6 +28,16 @@ I've uploaded a ready-to-go data-folder [here](https://mega.co.nz/#!PdEAhJTC!Yo_
 
 When it's running, you use WASD to move the camera (shift to move faster), hold right-mouse-button to look around, F1 to toggle SSAO (on/off/occlusion only), F2 to toggle normal-mapping on/off, and F3 to toggle parallax-mapping on/off.
 
+### Screenshots
+![Normal](https://raw.github.com/cforfang/RenderingSystemTest/master/screenshots/Main.png)
+
+SSAO occlusion only:
+![SSAO](https://raw.github.com/cforfang/RenderingSystemTest/master/screenshots/SSAO.png)
+
+Parallax-mapping on/off:
+![ParallaxOn](https://raw.github.com/cforfang/RenderingSystemTest/master/screenshots/ParallaxOn.png)
+![ParallaxOff](https://raw.github.com/cforfang/RenderingSystemTest/master/screenshots/ParallaxOff.png)
+
 ### Some takeaways:
 - Deferring the execution of commands makes error-handling, detection, and logging more difficult since the context of those commands are lost (e.g. who generated it).
 
